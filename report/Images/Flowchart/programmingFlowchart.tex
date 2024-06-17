@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% $Author: Sadegh Naderi $
+% $Datum: 11.02.2024  $
+% $Pfad: ML23-01-Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense\report\Images\Flowchart\programmingFlowchart.tex $
+% $Version: 1.0 $
+% $Reviewed by: Sadegh Naderi $
+% $Review Date: 11.02.2024 $
+%
+% !TeX encoding = utf8
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{tikzpicture}[>=stealth, node distance=1cm, every node/.style={rectangle, draw, align=center, font=\footnotesize}]
+	
+	% Nodes
+	\node (start) [ellipse, fill=orange!30] {Start};
+	\node (dataset) [diamond, below of=start, yshift=-0.9cm, fill=green!30] {Dataset \\ exists?};
+	\node (load) [below of=dataset, yshift=-2cm, fill=blue!30] {Load Dataset};
+	\node (download) [right=2cm of dataset, fill=blue!30] {Download Dataset};
+	\node (extract) [below of=download, yshift=-2cm, fill=blue!30] {Extract Dataset};
+	\node (testload) [below of=load, fill=blue!30] {Test Data Loading};
+	\node (preprocess) [below of=testload, fill=blue!30] {Preprocess Audio Dataset};
+	\node (testpreprocess) [below of=preprocess, fill=blue!30] {Test Audio Preprocessing};
+	\node (create) [below of=testpreprocess, fill=blue!30] {Create Spectrogram Dataset};
+	\node (testspectrogram) [below of=create, fill=blue!30] {Test Spectrogram Creation};
+	\node (build) [below of=testspectrogram, fill=blue!30] {Build Model};
+	\node (testbuild) [below of=build, fill=blue!30] {Test Model Building};
+	\node (compile) [below of=testbuild, fill=blue!30] {Compile Model};
+	\node (train) [below of=compile, fill=blue!30] {Train Model};
+	\node (evaluate) [below of=train, fill=blue!30] {Evaluate Model};
+	\node (createtest) [below of=evaluate, fill=blue!30] {Create Test Dataset};
+	\node (evaluatetest) [below of=createtest, fill=blue!30] {Evaluate Test Prediction};
+	\node (save) [below of=evaluatetest, fill=blue!30] {Save Model};
+	\node (convert) [below of=save, fill=blue!30] {Convert to TFLite and Save};
+	\node (testexport) [below of=convert, fill=blue!30] {Test Model Export};
+	\node (errors) [below of=testexport, fill=blue!30] {Catch and Handle Errors};
+	\node (errorslog) [below of=errors, fill=blue!30] {Log the Errors};
+	\node (end) [ellipse, below of=errorslog, fill=orange!20] {End};
+	
+	% Arrows
+	\draw[->] (start) -- (dataset);
+	\draw[->] (dataset) -- node[left, draw=none] {yes} (load);
+	\draw[->] (dataset) -- node[above, draw=none] {no} (download);
+	\draw[->] (download) -- (extract);
+	\draw[->] (extract) -- (load);
+	\draw[->] (load) -- (testload);
+	\draw[->] (testload) -- (preprocess);
+	\draw[->] (preprocess) -- (testpreprocess);
+	\draw[->] (testpreprocess) -- (create);
+	\draw[->] (create) -- (testspectrogram);
+	\draw[->] (testspectrogram) -- (build);
+	\draw[->] (build) -- (testbuild);
+	\draw[->] (testbuild) -- (compile);
+	\draw[->] (compile) -- (train);
+	\draw[->] (train) -- (evaluate);
+	\draw[->] (evaluate) -- (createtest);
+	\draw[->] (createtest) -- (evaluatetest);
+	\draw[->] (evaluatetest) -- (save);
+	\draw[->] (save) -- (convert);
+	\draw[->] (convert) -- (testexport);
+	\draw[->] (testexport) -- (errors);
+	\draw[->] (errors) -- (errorslog);
+	\draw[->] (errorslog) -- (end);
+	
+\end{tikzpicture}

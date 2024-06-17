@@ -1,0 +1,62 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% $Autor: Sadegh Naderi, Achal Shakywar, Malik Ghansletwala $
+% $Datum: 2023-11-24  $
+% $Short Description: Overview of conclusions, to-dos, and future work for the Keyword Spotting Project $
+% $Directory: ML23-01-Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense\report\Contents\en\Conclusion.tex $
+% $Version: 3 $
+% $Review by:Achal Shakywar $
+% $Review date: 2024-02-12 $
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Conclusion}
+
+The report began with a thorough examination of domain knowledge, encompassing TinyML, data collection, preprocessing, model training, deployment, and optimization. The hardware description shed light on the capabilities of the Arduino Nano 33 BLE Sense and its onboard sensors, detailing their functionalities and roles.
+
+The software description offered an overview of the tools and libraries utilized, including the Arduino IDE, TinyML model development tools, and various machine learning frameworks. The integration of Convolutional Neural Networks (CNNs) in the data mining process, particularly for speech recognition applications, represented a strategic adoption of relevant technologies.
+
+The Knowledge Discovery in Databases (KDD) process played a pivotal role, addressing the impracticality of manual data analysis and providing a framework for efficient data mining. The development phase of KDD, from database creation to data transformation, mining, and model evaluation, was systematically discussed. The challenges inherent in data mining were also acknowledged.
+
+The deployment section outlined practical implementation steps, offering a guide for individuals interested in replicating or expanding upon the keyword spotting system. The Bill of Materials, covering both hardware and software components, serves as a comprehensive resource for those looking to explore similar applications.
+
+The combination of hardware, software, and data mining techniques within this context not only addresses the specific challenges of keyword spotting but also contributes to the broader understanding of embedded systems and machine learning integration for real-world applications. The outlined methodologies and insights provide a foundation for future developments in the intersection of edge \ac{ai} and sensor-based technologies.
+
+the keyword spotting system, employing a CNN model and an Arduino Nano 33 BLE Sense, presents a training accuracy of 89.39\% and validation accuracy of 86.12\%. While the model exhibits proficiency in recognizing keywords from spectrograms, its deployment on the Arduino board reveals occasional sensitivities to environmental factors, leading to sporadic misclassifications and unknown keyword triggers. 
+
+\section{To do}
+
+There are additional opportunities for optimizations and enhancements that may be decided upon in the next phase of the project:
+
+\begin{enumerate}
+	\item \textbf{Optimization:} Explore further optimization techniques to enhance the model's efficiency and reduce resource utilization on the Arduino Nano 33 BLE Sense.
+	
+	\item \textbf{Expand Keyword Vocabulary:} Investigate methods for expanding the keyword vocabulary recognition capabilities, allowing the system to recognize a broader range of keywords.
+	
+	\item \textbf{Real-world Testing and User Feedback:} Conduct extensive real-world testing to gather user feedback and evaluate the system's performance in diverse environments. This feedback can be invaluable for refining the model and addressing real-world challenges.
+	
+	\item \textbf{Integration of Additional Sensors:} Explore the integration of additional sensors or feature sets to enhance the system's overall contextual awareness and improve keyword recognition accuracy.
+	
+	\item \textbf{User Interface Development:} Develop a user interface (UI) that allows users to interact with and configure the keyword spotting system more intuitively, providing a seamless user experience.
+\end{enumerate}
+
+
+\section{Future Work}
+
+The success of this project lays the groundwork for future advancements in keyword spotting and edge \ac{ai} applications. Potential avenues for future work include:
+
+\begin{enumerate}
+	
+	\item \textbf{Optimizing the Model:} Investigate additional techniques for optimizing the model size without compromising its performance. Explore quantization methods and compression techniques to achieve more efficient model representation.
+	
+	\item \textbf{Enhancing Model Robustness:} Explore methods to improve the model's robustness against variations in input, such as different accents, speaking rates, and background noise. This may include augmenting the training dataset with diverse examples and integrating strategies during model training to enhance robustness.
+	
+	\item \textbf{Iterations in Machine Learning Models:} Explore advanced machine learning models beyond Convolutional Neural Networks to improve keyword recognition on resource-constrained devices. Experiment with diverse model architectures, including recurrent neural networks and transformer models, to achieve better results.
+	
+	\item \textbf{Multi-modal Integration:} Investigate the integration of multi-modal data, such as combining audio cues with visual or environmental information, to create a more robust and context-aware keyword spotting system.
+	
+	\item \textbf{Dynamic Adaptation:} Develop mechanisms for dynamic adaptation, allowing the system to learn and adapt to changes in the acoustic environment or user preferences over time.
+
+\end{enumerate}
+

@@ -1,0 +1,1342 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{anyt/global//global/global}
+  \entry{Arduino:2023}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={Arduino},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ard12}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Get Started With Machine Learning on Arduino | Arduino
+  Documentation}
+    \verb{url}
+    \verb https://docs.arduino.cc/tutorials/nano-33-ble-sense/get-started-with-
+    \verb machine-learning
+    \endverb
+    \field{year}{14/12/2023}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Bushur:2023}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BJ}{%
+         family={Bushur},
+         familyi={B\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Chao},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MDPI}%
+    }
+    \strng{namehash}{BJCC1}
+    \strng{fullhash}{BJCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BC23}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.3390/fi15060219
+    \endverb
+    \field{number}{6}
+    \field{pages}{219}
+    \field{title}{Neural Network Exploration for Keyword Spotting on Edge
+  Devices}
+    \field{volume}{15}
+    \field{journaltitle}{Future Internet}
+    \field{year}{2023}
+  \endentry
+
+  \entry{Boesch:2021}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BG}{%
+         family={Boesch},
+         familyi={B\bibinitperiod},
+         given={Gaudenz},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BG1}
+    \strng{fullhash}{BG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Boe09}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    TensorFlow Lite is a lightweight machine learning library to power
+  real-time computer vision with edge devices to solve real-world problems.%
+    }
+    \field{title}{TensorFlow Lite -- Real-Time Computer Vision on Edge Devices
+  (2022)}
+    \verb{url}
+    \verb https://viso.ai/edge-ai/tensorflow-lite/
+    \endverb
+    \field{journaltitle}{viso.ai}
+    \field{year}{21/09/2021}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{C:2022}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CBP}{%
+         family={C},
+         familyi={C},
+         given={Bala\bibnamedelima Priya},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CBP1}
+    \strng{fullhash}{CBP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{C 0}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Have you ever trained a machine learning model on a real-world dataset? If
+  yes, you'll have likely come across outliers. Outliers are those data points
+  that are significantly different from the rest of the dataset. They are often
+  abnormal observations that skew the data distribution, and arise due to
+  inconsistent data entry, or erroneous observations. To ensure that the
+  trained model generalizes well to the valid range of test inputs, it's
+  important to detect and remove outliers. In this gui%
+    }
+    \field{title}{How to Detect Outliers in Machine Learning -- 4 Methods for
+  Outlier Detection}
+    \verb{url}
+    \verb https://www.freecodecamp.org/news/how-to-detect-outliers-in-machine-l
+    \verb earning/
+    \endverb
+    \field{journaltitle}{freeCodeCamp.org}
+    \field{year}{06-07-2022}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Dutta:2021}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DL}{%
+         family={Dutta},
+         familyi={D\bibinitperiod},
+         given={Lachit},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bharali},
+         familyi={B\bibinitperiod},
+         given={Swapna},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{DLBS1}
+    \strng{fullhash}{DLBS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{DB21}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1016/j.iot.2021.100461
+    \endverb
+    \field{pages}{100461}
+    \field{title}{TinyML Meets IoT: A Comprehensive Survey}
+    \field{volume}{16}
+    \field{journaltitle}{Internet of Things}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Dokic:2020}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=DK}{%
+         family={Dokic},
+         familyi={D\bibinitperiod},
+         given={Kristian},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Martinovic},
+         familyi={M\bibinitperiod},
+         given={Marko},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Mandusic},
+         familyi={M\bibinitperiod},
+         given={Dubravka},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{DKMMMD1}
+    \strng{fullhash}{DKMMMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{DMM20}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{booktitle}{2020 5th South-East Europe Design Automation, Computer
+  Engineering, Computer Networks and Social Media Conference (SEEDA-CECNSM)}
+    \verb{doi}
+    \verb 10.1109/SEEDA-CECNSM49515.2020.9221846
+    \endverb
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Inference Speed and Quantisation of Neural Networks with
+  TensorFlow Lite for Microcontrollers Framework}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Fezari:2018}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FM}{%
+         family={Fezari},
+         familyi={F\bibinitperiod},
+         given={Mohamed},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ADA}{%
+         family={Al\bibnamedelima Dahoud},
+         familyi={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={Ali},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ResearchGate}%
+    }
+    \strng{namehash}{FMADA1}
+    \strng{fullhash}{FMADA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{FAD18}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{pages}{1\bibrangedash 12}
+    \field{title}{Integrated development environment “IDE” for Arduino}
+    \field{journaltitle}{WSN applications}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Fayyad:1996}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FU}{%
+         family={Fayyad},
+         familyi={F\bibinitperiod},
+         given={Usama},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=PSG}{%
+         family={Piatetsky-Shapiro},
+         familyi={P\bibinithyphendelim S\bibinitperiod},
+         given={Gregory},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Smyth},
+         familyi={S\bibinitperiod},
+         given={Padhraic},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM New York, NY, USA}%
+    }
+    \strng{namehash}{FUPSGSP1}
+    \strng{fullhash}{FUPSGSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{FPSS96}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1145/240455.240464
+    \endverb
+    \field{number}{11}
+    \field{pages}{27\bibrangedash 34}
+    \field{title}{The KDD Process for Extracting Useful Knowledge from Volumes
+  of Data}
+    \field{volume}{39}
+    \field{journaltitle}{Communications of the ACM}
+    \field{year}{1996}
+  \endentry
+
+  \entry{Geron:2022}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GA}{%
+         family={G{\'e}ron},
+         familyi={G\bibinitperiod},
+         given={Aur{\'e}lien},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {" O'Reilly Media, Inc."}%
+    }
+    \strng{namehash}{GA1}
+    \strng{fullhash}{GA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{G{\'e}r22}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{edition}{2nd}
+    \field{isbn}{9781492032649}
+    \field{title}{Hands-On Machine Learning with Scikit-Learn, Keras, and
+  TensorFlow}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Gimenez:2022b}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=GNL}{%
+         family={Gim{\'e}nez},
+         familyi={G\bibinitperiod},
+         given={Nil\bibnamedelima Llisterri},
+         giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=FF}{%
+         family={Freitag},
+         familyi={F\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={JunKyu},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=VH}{%
+         family={Vandierendonck},
+         familyi={V\bibinitperiod},
+         given={Hans},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{GNL+1}
+    \strng{fullhash}{GNLFFLJVH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Gim+22}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{2022 11th Mediterranean Conference on Embedded Computing
+  (MECO)}
+    \verb{doi}
+    \verb 10.1109/MECO55406.2022.9797171
+    \endverb
+    \field{pages}{1\bibrangedash 4}
+    \field{title}{Comparison of Two Microcontroller Boards for On-Device Model
+  Training in a Keyword Spotting Task}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Goldsborough:2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GP}{%
+         family={Goldsborough},
+         familyi={G\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GP1}
+    \strng{fullhash}{GP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Gol16}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.48550/arXiv.1610.01178
+    \endverb
+    \field{title}{A Tour of TensorFlow}
+    \field{journaltitle}{arXiv preprint arXiv:1610.01178}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Gu:2018}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=GJ}{%
+         family={Gu},
+         familyi={G\bibinitperiod},
+         given={Jiuxiang},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zhenhua},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kuen},
+         familyi={K\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Lianyang},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Shahroudy},
+         familyi={S\bibinitperiod},
+         given={Amir},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Shuai},
+         familyi={S\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Ting},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WX}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Xingxing},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Gang},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cai},
+         familyi={C\bibinitperiod},
+         given={Jianfei},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{GJ+1}
+    \strng{fullhash}{GJWZKJMLSASBLTWXWGCJ+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Gu+18}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1016/j.patcog.2017.10.013
+    \endverb
+    \field{pages}{354\bibrangedash 377}
+    \field{title}{Recent Advances in Convolutional Neural Networks}
+    \field{volume}{77}
+    \field{journaltitle}{Pattern recognition}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Huang:2021}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=HQ}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Qiang},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hain},
+         familyi={H\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{HQHT1}
+    \strng{fullhash}{HQHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{HH21}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{ICASSP 2021-2021 IEEE International Conference on
+  Acoustics, Speech and Signal Processing (ICASSP)}
+    \verb{doi}
+    \verb 10.1109/ICASSP39728.2021.9414611
+    \endverb
+    \field{pages}{6473\bibrangedash 6477}
+    \field{title}{Improving Audio Anomalies Recognition Using Temporal
+  Convolutional Attention Networks}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Harris:2023}{online}{}
+    \name{author}{1}{}{%
+      {{hash=HS}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HS1}
+    \strng{fullhash}{HS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Har23}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{titleaddon}{Advanced Navigation}
+    \field{title}{Inertial guidance: a brief history and overview}
+    \verb{url}
+    \verb https://www.advancednavigation.com/tech-articles/inertial-guidance-a-
+    \verb brief-history-and-overview/
+    \endverb
+    \field{day}{03}
+    \field{month}{01}
+    \field{year}{2023}
+    \field{urlday}{09}
+    \field{urlmonth}{12}
+    \field{urlyear}{2023}
+  \endentry
+
+  \entry{Idris:2015}{book}{}
+    \name{author}{1}{}{%
+      {{hash=II}{%
+         family={Idris},
+         familyi={I\bibinitperiod},
+         given={Ivan},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt Publishing Ltd}%
+    }
+    \strng{namehash}{II1}
+    \strng{fullhash}{II1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Idr15}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \verb{doi}
+    \verb 9781785281969
+    \endverb
+    \field{title}{NumPy: Beginner's Guide}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Johnson:2023}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=JJ}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JJ1}
+    \strng{fullhash}{JJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Joh 1}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{Anomaly Detection with Machine Learning: An Introduction}
+    \verb{url}
+    \verb https://www.bmc.com/blogs/machine-learning-anomaly-detection/
+    \endverb
+    \field{journaltitle}{BMC Blog}
+    \field{year}{12-12-2023}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Khandelwal:2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=KR}{%
+         family={Khandelwal},
+         familyi={K\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KR1}
+    \strng{fullhash}{KR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Kha21}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+  \field{howpublished}{https://towardsdatascience.com/a-basic-introduction-to-tensorflow-lite-59e480c57292}
+    \field{title}{A {Basic} {Introduction} to {TensorFlow} {Lite} - {Towards}
+  {Data} {Science}}
+    \field{year}{2021}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Kumar:2023}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KS}{%
+         family={Kumar},
+         familyi={K\bibinitperiod},
+         given={Satyam},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KS1}
+    \strng{fullhash}{KS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Kum 1}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Real-world data sets often contain anomalies or outlier data points.%
+    }
+    \field{title}{5 Anomaly Detection Algorithms to Know}
+    \verb{url}
+    \verb https://builtin.com/machine-learning/anomaly-detection-algorithms
+    \endverb
+    \field{journaltitle}{Built In}
+    \field{year}{08-11-2023}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Gimenez:2022a}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LGN}{%
+         family={Llisterri\bibnamedelima Gim{\'e}nez},
+         familyi={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={Nil},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MGM}{%
+         family={Monfort\bibnamedelima Grau},
+         familyi={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PCR}{%
+         family={Pueyo\bibnamedelima Centelles},
+         familyi={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Roger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FF}{%
+         family={Freitag},
+         familyi={F\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MDPI}%
+    }
+    \strng{namehash}{LGN+1}
+    \strng{fullhash}{LGNMGMPCRFF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{LG+22}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.3390/electronics11040573
+    \endverb
+    \field{number}{4}
+    \field{pages}{573}
+    \field{title}{On-Device Training of Machine Learning Models on
+  Microcontrollers with Federated Learning}
+    \field{volume}{11}
+    \field{journaltitle}{Electronics}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Li:2021}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LZ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Zewen},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Fan},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=YW}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Wenjie},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Shouheng},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Jun},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LZ+1}
+    \strng{fullhash}{LZLFYWPSZJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Li+21}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1109/TNNLS.2021.3084827
+    \endverb
+    \field{title}{A Survey of Convolutional Neural Networks: Analysis,
+  Applications, and Prospects}
+    \field{journaltitle}{IEEE transactions on neural networks and learning
+  systems}
+    \field{year}{2021}
+  \endentry
+
+  \entry{LSM9DS1:2015}{online}{}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Lsm}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{note}{\textcolor{blue}{Accessed Date 15.12.2023}}
+    \field{title}{LSM9DS1 Data Sheets}
+    \verb{url}
+    \verb url: https://www.st.com/resource/en/datasheet/lsm9ds1.pdf
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{Mallon:2015}{online}{}
+    \name{author}{2}{}{%
+      {{hash=ME}{%
+         family={Mallon},
+         familyi={M\bibinitperiod},
+         given={Edward},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Beddows},
+         familyi={B\bibinitperiod},
+         given={Patricia},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MEBP1}
+    \strng{fullhash}{MEBP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{MB15}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{\textcolor{blue}{Accessed Date 15.12.2023}}
+    \field{title}{Tutorial: How to Calibrate a Compass (and Accelerometer) with
+  Arduino}
+    \verb{url}
+    \verb https://thecavepearlproject.org/2015/05/22/calibrating-any-compass-or
+    \verb -accelerometer-for-arduino/
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{Mishra:2023}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MA}{%
+         family={Mishra},
+         familyi={M\bibinitperiod},
+         given={Ashish},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MA1}
+    \strng{fullhash}{MA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Mis 1}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    TinyML introduces Machine Learning to the scene by incorporating Artificial
+  Intelligence into small hardware components. You'll need some knowledge of
+  machine learning and embedded software development to build a TinyML
+  project.%
+    }
+    \field{title}{Introduction to TinyML: What is it and Why does it Matter?}
+    \verb{url}
+    \verb https://circuitdigest.com/article/introduction-to-tinyml-what-is-it-a
+    \verb nd-why-does-it-matter
+    \endverb
+    \field{year}{11-12-2023}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{MP34DT06J:2021}{online}{}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Mp3}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{\textcolor{blue}{Accessed Date 15.12.2023}}
+    \field{title}{MP34DT06J – MEMS Audio Sensor Omnidirectional Digital
+  Microphone}
+    \verb{url}
+    \verb https://www.st.com/resource/en/datasheet/mp34dt06j.pdf
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{Nichani:2020}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NP}{%
+         family={Nichani},
+         familyi={N\bibinitperiod},
+         given={Prerna},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NP1}
+    \strng{fullhash}{NP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Nic 0}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    Outliers are datapoints in dataset in which are abnormal observations
+  amongst the normal observations and can lead to weird accuracy scores which
+  can skew measurements as the results do not present$\ldots$%
+    }
+    \field{title}{Outliers in Machine Learning - Analytics Vidhya - Medium}
+    \verb{url}
+    \verb https://medium.com/analytics-vidhya/outliers-in-machine-learning-e830
+    \verb b2bd8660
+    \endverb
+    \field{journaltitle}{Analytics Vidhya}
+    \field{year}{22-04-2020}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Oord:2016}{article}{}
+    \name{author}{9}{}{%
+      {{hash=OAvd}{%
+         family={Oord},
+         familyi={O\bibinitperiod},
+         given={Aaron van\bibnamedelima den},
+         giveni={A\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim
+  d\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Dieleman},
+         familyi={D\bibinitperiod},
+         given={Sander},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zen},
+         familyi={Z\bibinitperiod},
+         given={Heiga},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Simonyan},
+         familyi={S\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=VO}{%
+         family={Vinyals},
+         familyi={V\bibinitperiod},
+         given={Oriol},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Graves},
+         familyi={G\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KN}{%
+         family={Kalchbrenner},
+         familyi={K\bibinitperiod},
+         given={Nal},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Senior},
+         familyi={S\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kavukcuoglu},
+         familyi={K\bibinitperiod},
+         given={Koray},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OAvd+1}
+    \strng{fullhash}{OAvdDSZHSKVOGAKNSAKK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Oor+16}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \verb{doi}
+    \verb 10.48550/arXiv.1609.03499
+    \endverb
+    \field{title}{WaveNet: A Generative Model for Raw Audio}
+    \field{journaltitle}{arXiv preprint arXiv:1609.03499}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Ousterhout:2018}{book}{}
+    \name{author}{1}{}{%
+      {{hash=OJK}{%
+         family={Ousterhout},
+         familyi={O\bibinitperiod},
+         given={John\bibnamedelima K},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Yaknyam Press Palo Alto, CA, USA}%
+    }
+    \strng{namehash}{OJK1}
+    \strng{fullhash}{OJK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ous18}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{isbn}{9781732102200}
+    \field{title}{A Philosophy of Software Design}
+    \field{volume}{98}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Pang:2020}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PB}{%
+         family={Pang},
+         familyi={P\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=NE}{%
+         family={Nijkamp},
+         familyi={N\bibinitperiod},
+         given={Erik},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=WYN}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Ying\bibnamedelima Nian},
+         giveni={Y\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SAGE Publications Sage CA: Los Angeles, CA}%
+    }
+    \strng{namehash}{PBNEWYN1}
+    \strng{fullhash}{PBNEWYN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{PNW20}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{doi}
+    \verb 10.3102/1076998619872761
+    \endverb
+    \field{number}{2}
+    \field{pages}{227\bibrangedash 248}
+    \field{title}{Deep Learning With TensorFlow: A Review}
+    \field{volume}{45}
+    \field{journaltitle}{Journal of Educational and Behavioral Statistics}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Panayotov:2015}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=PV}{%
+         family={Panayotov},
+         familyi={P\bibinitperiod},
+         given={Vassil},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Guoguo},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Povey},
+         familyi={P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Khudanpur},
+         familyi={K\bibinitperiod},
+         given={Sanjeev},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{PV+1}
+    \strng{fullhash}{PVCGPDKS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Pan+15}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{2015 IEEE international conference on acoustics, speech
+  and signal processing (ICASSP)}
+    \verb{doi}
+    \verb 10.1109/ICASSP.2015.7178964
+    \endverb
+    \field{pages}{5206\bibrangedash 5210}
+    \field{title}{Librispeech: An ASR Corpus Based on Public Domain Audio
+  Books}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Raj:2019}{online}{}
+    \name{author}{1}{}{%
+      {{hash=RA}{%
+         family={Raj},
+         familyi={R\bibinitperiod},
+         given={Aswinth},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RA1}
+    \strng{fullhash}{RA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Raj19}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{\textcolor{blue}{Accessed Date 15.12.2023}}
+    \field{title}{Arduino Nano 33 {BLE} Sense Review - What's New and How to
+  Get Started?}
+    \verb{url}
+    \verb https://circuitdigest.com/microcontroller-projects/arduino-nano-33-bl
+    \verb e-sense-board-review-and-getting-started-guide
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{Ray:2022}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RPP}{%
+         family={Ray},
+         familyi={R\bibinitperiod},
+         given={Partha\bibnamedelima Pratim},
+         giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RPP1}
+    \strng{fullhash}{RPP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ray22}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.1016/j.jksuci.2021.11.019
+    \endverb
+    \field{number}{4}
+    \field{pages}{1595\bibrangedash 1623}
+    \field{title}{A Review on TinyML: State-of-the-art and Prospects}
+    \field{volume}{34}
+    \field{journaltitle}{Journal of King Saud University-Computer and
+  Information Sciences}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Ribeiro:2020}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RJ}{%
+         family={Ribeiro},
+         familyi={R\bibinitperiod},
+         given={Jair},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RJ1}
+    \strng{fullhash}{RJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Rib 1}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Tiny Machine Learning (or TinyML) is a machine learning technique that
+  integrates reduced and optimized machine learning applications that require
+  ``full-stack'' (hardware, system, software, and$\ldots$%
+    }
+    \field{title}{What is TinyML, and Why does it Matter? | The AI Enthusiast}
+    \verb{url}
+    \verb https://medium.com/tech-cult-heartbeat/what-is-tinyml-and-why-does-it
+    \verb -matter-f5b164766876
+    \endverb
+    \field{journaltitle}{The AI Enthusiast}
+    \field{year}{22-12-2020}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Sewak:2018}{book}{}
+    \name{author}{3}{}{%
+      {{hash=SM}{%
+         family={Sewak},
+         familyi={S\bibinitperiod},
+         given={Mohit},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KMR}{%
+         family={Karim},
+         familyi={K\bibinitperiod},
+         given={Md\bibnamedelima Rezaul},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Pujari},
+         familyi={P\bibinitperiod},
+         given={Pradeep},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Packt Publishing Ltd}%
+    }
+    \strng{namehash}{SMKMRPP1}
+    \strng{fullhash}{SMKMRPP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{SKP18}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{isbn}{9781788392303}
+    \field{title}{Practical Convolutional Neural Networks: Implement Advanced
+  Deep Learning Models Using Python}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Singh:2019}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SP}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Pramod},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Manure},
+         familyi={M\bibinitperiod},
+         given={Avinash},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Apress}%
+    }
+    \strng{namehash}{SPMA1}
+    \strng{fullhash}{SPMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{SM19}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{isbn}{9781484255605}
+    \field{title}{Learn TensorFlow 2.0: Implement Machine Learning and Deep
+  Learning Models with Python}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Warden:2019}{book}{}
+    \name{author}{2}{}{%
+      {{hash=WP}{%
+         family={Warden},
+         familyi={W\bibinitperiod},
+         given={Pete},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Situnayake},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{O'Reilly Media, Incorporated}}%
+    }
+    \strng{namehash}{WPSD1}
+    \strng{fullhash}{WPSD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{WS19}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{isbn}{9781492052043}
+    \field{title}{{TinyML -- Machine Learning with TensorFlow Lite on Arduino
+  and Ultra-Low-Power Microcontrollers}}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Waqar:2021}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WDM}{%
+         family={Waqar},
+         familyi={W\bibinitperiod},
+         given={Dania\bibnamedelima Maryam},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GTS}{%
+         family={Gunawan},
+         familyi={G\bibinitperiod},
+         given={Teddy\bibnamedelima Surya},
+         giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={Morshidi},
+         familyi={M\bibinitperiod},
+         given={Malik\bibnamedelima Arman},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={Kartiwi},
+         familyi={K\bibinitperiod},
+         given={Mira},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{WDM+1}
+    \strng{fullhash}{WDMGTSMMAKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Waq+21}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{2021 IEEE 7th International Conference on Smart
+  Instrumentation, Measurement and Applications (ICSIMA)}
+    \verb{doi}
+    \verb 10.1109/ICSIMA50015.2021.9526323
+    \endverb
+    \field{pages}{64\bibrangedash 69}
+    \field{title}{Design of a Speech Anger Recognition System on Arduino Nano
+  33 BLE Sense}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Warden:2018}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WP}{%
+         family={Warden},
+         familyi={W\bibinitperiod},
+         given={Pete},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WP1}
+    \strng{fullhash}{WP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{War18}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.48550/arXiv.1804.03209
+    \endverb
+    \field{title}{Speech commands: A dataset for limited-vocabulary speech
+  recognition}
+    \field{journaltitle}{arXiv preprint arXiv:1804.03209}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Wings:2023}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WE}{%
+         family={Wings},
+         familyi={W\bibinitperiod},
+         given={Elmar},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WE1}
+    \strng{fullhash}{WE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Win23}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{howpublished}{Presentation for the Machine Learning course at the
+  University of Applied Sciences Emden / Leer}
+    \field{title}{Knowledge Discovery in Databases Process}
+    \field{year}{2023}
+  \endentry
+\enddatalist
+\endinput

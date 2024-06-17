@@ -1,0 +1,36 @@
+var namespaces_dup =
+[
+    [ "clothingimgClassification", "namespaceclothingimg_classification.html", [
+      [ "plotImage", "namespaceclothingimg_classification.html#aad76cf3b934bc29d07c77d4d50d17c88", null ],
+      [ "plotValueArray", "namespaceclothingimg_classification.html#a5cb2656efc37f9920f81d590b1bfbaf2", null ],
+      [ "_", "namespaceclothingimg_classification.html#abf730a6ec7dd425cc5b30174bb89009a", null ],
+      [ "classNames", "namespaceclothingimg_classification.html#a151169ff130706e5782b704e963a547f", null ],
+      [ "cmap", "namespaceclothingimg_classification.html#a59db2719a1bb542b6494e65793642f00", null ],
+      [ "converter", "namespaceclothingimg_classification.html#a0f9da320eae09c257303ffa6546c6fda", null ],
+      [ "epochs", "namespaceclothingimg_classification.html#a07eef1d20c631ca04c684b571474d8b0", null ],
+      [ "fashionMnist", "namespaceclothingimg_classification.html#a4f42b0a2ee010819893bf7b29e949fe3", null ],
+      [ "figsize", "namespaceclothingimg_classification.html#a6a25d83b6c58b1da158c85efaffbef57", null ],
+      [ "i", "namespaceclothingimg_classification.html#a6250b329ef538c191099a339ec4f225c", null ],
+      [ "img", "namespaceclothingimg_classification.html#aa707c7212f9899992f5ef535a8027023", null ],
+      [ "loss", "namespaceclothingimg_classification.html#a839acc0a43343cb2dac4acc5d474984e", null ],
+      [ "metrics", "namespaceclothingimg_classification.html#a1e8315edef59bfaa282fb271fad315f9", null ],
+      [ "model", "namespaceclothingimg_classification.html#a41016b0b1b6f575d178f59b6279cb6e2", null ],
+      [ "numCols", "namespaceclothingimg_classification.html#a19653e3e9f0e7b69707320fd4fa310c4", null ],
+      [ "numImages", "namespaceclothingimg_classification.html#ab671bfc12b51607ad6026af69f0a07d7", null ],
+      [ "numRows", "namespaceclothingimg_classification.html#a0f0149024a350bbdcd1950c40e8247b4", null ],
+      [ "optimizer", "namespaceclothingimg_classification.html#a3f5a46733c0c38874276ad8a39086d93", null ],
+      [ "predictions", "namespaceclothingimg_classification.html#a5badebf621fae4142bafe139b0420f8c", null ],
+      [ "predictionsSingle", "namespaceclothingimg_classification.html#af5af8631603ca2d13ae5b02edb6c8307", null ],
+      [ "probabilityModel", "namespaceclothingimg_classification.html#a3bc281cbcc1d2bffcd233ec5fa1a6f2d", null ],
+      [ "savedModelPath", "namespaceclothingimg_classification.html#a20dc47c38a4dc9a6539cea6bc51455ec", null ],
+      [ "testAcc", "namespaceclothingimg_classification.html#a50818855c2c0542ad8dd6c6bf6322820", null ],
+      [ "testImages", "namespaceclothingimg_classification.html#a02451812078723049c1a5e2282647cbd", null ],
+      [ "testLabels", "namespaceclothingimg_classification.html#a8575230c7a44ab21107cc19d637563ba", null ],
+      [ "testLoss", "namespaceclothingimg_classification.html#a0a0d031334d3f2ef058a3e36c2f81a3d", null ],
+      [ "tfliteModel", "namespaceclothingimg_classification.html#a81f4feee82d8b0497a432c7f6f135af8", null ],
+      [ "tfliteModelPath", "namespaceclothingimg_classification.html#a6076d34db263edb2fdc8e10cc5953671", null ],
+      [ "trainImages", "namespaceclothingimg_classification.html#ad499fc3cad050079f0f15ba139951a2f", null ],
+      [ "trainLabels", "namespaceclothingimg_classification.html#a2d5a3a002a13dbb1cc3ccf9e33f9d364", null ],
+      [ "verbose", "namespaceclothingimg_classification.html#a069532db0714efdab40d27cd937098fb", null ]
+    ] ]
+];

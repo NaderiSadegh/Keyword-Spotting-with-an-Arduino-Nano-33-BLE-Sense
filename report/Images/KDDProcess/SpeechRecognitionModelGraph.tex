@@ -1,0 +1,31 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% $Author: Sadegh Naderi $
+% $Datum: 13.12.2023  $
+% $Pfad: MLProject\ML23-01-Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense\report\Images\KDDProcessSpeechRecognitionModelGraph.tex $
+% $Version: 1.0 $
+%
+% !TeX encoding = utf8
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetikzlibrary{arrows.meta}
+
+\begin{tikzpicture}[
+	node distance=2cm,
+	block/.style={rectangle, draw, text width=5cm, text centered, minimum height=1cm},
+	arrow/.style={->, >=Stealth}
+	]
+	% Nodes
+	\node [block] (reshape) {reshape\_1};
+	\node [block, below=of reshape] (conv) {\textbf{DepthwiseConv2D} \\ weights $<1 \times 10 \times 8 \times 8>$ \\ bias $<8>$};
+	\node [block, below=of conv] (fc) {\textbf{FullyConnected} \\ weights $<4 \times 4000>$ \\ bias $<8>$};
+	\node [block, below=of fc] (softmax) {Softmax};
+	\node [block, below=of softmax] (labels) {labels\_softmax};
+	
+	% Arrows
+	\draw [arrow] (reshape) -- (conv) node[midway, right] {$1 \times 49 \times 40 \times 1$};
+	\draw [arrow] (conv) -- (fc) node[midway, right] {$1 \times 25 \times 20 \times 8$};
+	\draw [arrow] (fc) -- (softmax) node[midway, right] {$1 \times 4$};
+	\draw [arrow] (softmax) -- (labels) node[midway, right] {$1 \times 4$};
+\end{tikzpicture}

@@ -1,0 +1,42 @@
+\begin{theindex}
+
+  \item  Inertial Measurement Unit
+    \subitem  \emph  {see} IMU, xv, 21
+
+  \indexspace
+
+  \item AI, xv, 241, 242
+  \item API, xv, 54
+  \item Application Programming Interface
+    \subitem  \emph  {see} {API}, xv, 54
+  \item Artificial Intelligence
+    \subitem  \emph  {see} AI, xv, 241
+
+  \indexspace
+
+  \item Central Processing Unit
+    \subitem  \emph  {see} {CPU}, xv, 19
+  \item CNN, iii, xv, 59
+  \item Convolutional Neural Network
+    \subitem  \emph  {see} {CNN}, iii, xv, 59
+  \item CPU, xv, 19--21, 170
+
+  \indexspace
+
+  \item GPU, xv, 71
+  \item Graphics Processing Unit
+    \subitem  \emph  {see} GPU, xv, 71
+
+  \indexspace
+
+  \item IMU, xv, 21, 22
+  \item Integrated Development Environment
+    \subitem  \emph  {see} IDE, 167
+
+  \indexspace
+
+  \item KDD, iv, v, xv, 129, 145
+  \item Knowledge Discovery in Databases
+    \subitem  \emph  {see} KDD, iv, v, xv, 129
+
+\end{theindex}

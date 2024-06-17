@@ -1,0 +1,603 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% $Autor: Sadegh Naderi $
+% $Datum: 2023-11-24  $
+% $Short Description: Technical documentation of each step in technical development and the machine learning pipeline $
+% $Directory: ML23-01-Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense\report\Contents\en\DocumentationDevelopment .tex $
+% $Version: 3.0 $
+% $Review by: Sadegh Naderi $
+% $Review date: 2023-02-11 $
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Documentation Development}
+\label{chapter:DocDevelopment}
+
+
+In software development, the creation of comprehensive technical documentation plays a crucial role in guiding the project through its lifecycle. This documentation serves to address two fundamental questions that shape the entire development process.
+
+\subsubsection{Defining the Product: Product Documentation}
+
+The first question revolves around determining the nature of the product. What features should the product possess to meet the needs of its users? This aspect of project management is covered under product documentation. A product is essentially a system designed with a specific set of features intended to assist users in achieving their objectives. These features, known as functional requirements, outline the core capabilities that the software should offer.
+
+For instance, in this project, the product documentation would specify the functional requirements related to identifying and recognizing keywords using the Arduino Nano 33 BLE Sense. These requirements might include the supported keywords, sensitivity levels, and integration with other components.
+
+
+\subsubsection{Constructing the Product: Process Documentation}
+
+The second critical question is how to go about building the product. This aspect is addressed in process documentation. Process documentation outlines the methodologies, workflows, and procedures that need to be followed during the development lifecycle. It provides a roadmap for the entire development team, ensuring a standardized and efficient approach to building the software.
+
+Considering our example project "Keyword Spotting with an Arduino Nano 33 BLE Sense," process documentation would detail the steps involved in implementing the keyword spotting functionality on the Arduino platform. This includes tasks such as setting up the Arduino development environment, integrating the necessary libraries, and defining the overall workflow for keyword recognition.
+
+
+\section{Defining the Product}
+
+\begin{itemize}
+	\item \textbf{Keyword Recognition:} The product should be capable of recognizing predefined keywords within audio input signals. These keywords are essential for user-defined commands or triggers.
+	
+	\item \textbf{Supported Keywords:} The product should support a defined set of keywords, allowing users to customize and specify the words or phrases they want the system to recognize.
+	
+	\item \textbf{LED Indication:} The product should feature LED indicators to visually communicate the recognition status. Specifically, a green LED should signify the recognition of a keyword, a red LED for the absence of a keyword, and a blue LED for instances where the system cannot recognize the spoken keyword.
+	
+	\item \textbf{Low Resource Consumption:} The solution should be designed to operate with minimal resource consumption on the Arduino Nano 33 BLE Sense, considering its constraints in terms of memory and processing power.
+	
+	\item \textbf{Modularity and Extensibility:} The codebase and functionalities should follow modular programming principles, allowing for easy extension or modification of individual components. This modularity enhances maintainability and facilitates future updates.
+	
+	\item \textbf{Documentation:} Comprehensive documentation, including installation instructions, configuration guidelines, and usage details, should be provided to assist users and developers in implementing the solution.
+	
+	\item \textbf{Testing and Validation:} The product should undergo rigorous testing to validate its performance under various conditions. Testing should cover aspects such as keyword recognition accuracy, response time, and robustness against noise.
+\end{itemize}
+
+
+
+\section{Flowchart of each Step in Tech Development}
+\label{section:techDevSteps}
+
+The steps in tech development are explained in this section. the flowchart of the process is shown in Figure \ref{fig:techDevFlowchart}
+
+\subsubsection{Step 1: Install Python}
+
+Install Python on your system. You can download the latest version from the \href{https://www.python.org/downloads/}{official Python website}.
+
+\begin{verbatim}
+	# Example for Linux
+	sudo apt-get update
+	sudo apt-get install python3
+\end{verbatim}
+
+\subsubsection{Step 2: Install PyCharm}
+
+Download and install PyCharm, a popular Python IDE, from the \href{https://www.jetbrains.com/pycharm/download/}{JetBrains website}.
+
+\subsubsection{Step 3: Set Up Environment}
+
+Create and set up a virtual environment for your project using the following commands:
+
+\begin{verbatim}
+	# Create a virtual environment
+	python -m venv venv
+	
+	# Activate the virtual environment
+	# Example for Windows
+	venv\Scripts\activate
+	
+	# Install dependencies from requirements.txt
+	pip install -r requirements.txt
+	
+	# Install developer-specific package
+	pip install devPackageName
+\end{verbatim}
+
+Make sure to list all necessary Python packages and their versions in the \texttt{requirements.txt} file. See Section \ref{section:requirementsFile} for more details.
+
+\textbf{Note:} You can also use the \textbf{.yml} file for setting up the environment. See Section \ref{section:CondaEnvConfig}. You would also need to install \texttt{Anaconda} in this case.
+
+
+\subsubsection{Step 4: Install Arduino IDE}
+
+Download and install the Arduino IDE from the \href{https://www.arduino.cc/en/software}{official Arduino website}.
+
+\subsubsection{Step 5: Install TensorFlow Library for Arduino IDE}
+
+Follow the instructions provided by the TensorFlow Lite for Microcontrollers documentation to install the library in the Arduino IDE: \href{https://github.com/tensorflow/tflite-micro-arduino-examples}{TensorFlow Lite Micro}.
+
+\subsubsection{Step 6: Set Environment Variables (Windows)}
+
+To work with TensorFlow and Arduino in the Command Prompt, you need to set the necessary environment variables. Follow these steps:
+
+\begin{enumerate}
+	\item Right-click on the Start menu and select "System."
+	\item Click on "Advanced system settings" on the left.
+	\item In the System Properties window, click on the "Environment Variables" button.
+	\item Under "User variables," click "New" to add a new variable.
+	\item Add the following variables:
+	
+	\begin{itemize}
+		\item Variable Name: \texttt{PATH}
+		\item Variable Value: Append the paths to the Python Scripts folder and Arduino IDE executable folder, separated by a semicolon. For example:
+		\begin{verbatim}
+			C:\Python39\Scripts;C:\Program Files (x86)\Arduino
+		\end{verbatim}
+	\end{itemize}
+\end{enumerate}
+
+\subsubsection{Step 7: Run Tests}
+
+test your data, model, and exporting functionalities with the files \href{run:../Code/KeywordSpotting/testDataUtils.py}{\texttt{testDataUtils.py}}, \href{run:../Code/KeywordSpotting/testModelUtilst.py}{\texttt{testModelUtilst.py}}, and \href{run:../Code/KeywordSpotting/testExportUtils.py}{\texttt{testExportUtils.py}} in the \texttt{Code/KeywordSpotting} directory.
+
+
+\subsubsection{Step 8: Execute the ML Pipeline}
+
+Run the \href{run:../Code/KeywordSpotting/KeywordSpotting.py}{\texttt{KeywordSpotting.py}} file in the \texttt{Code/KeywordSpotting} directory to execute the ML pipeline. Ensure that Python is using the virtual environment created earlier.
+
+\begin{verbatim}
+	python KeywordSpotting.py
+\end{verbatim}
+
+\subsubsection{Step 9: Convert model.tflite to a C Header File}
+
+Execute the following command to convert the TensorFlow Lite model to a C header file:
+
+\begin{verbatim}
+	xxd -i model.tflite > tinyConv.cc
+\end{verbatim}
+
+\subsubsection{Step 10: Integrate C Header in TensorFlow Library}
+
+Paste the vector from \texttt{tinyConv.cc} into the \texttt{micro\_features\_model.cpp} file within the TensorFlow Library for Arduino IDE.
+
+\subsubsection{Step 11: Upload Sketch to Arduino Board}
+
+Use the \texttt{micro\_speech.ino} file to upload the sketch to the connected Arduino board using the Arduino IDE.
+
+Ensure you have the necessary permissions, and the board is properly connected.
+
+\begin{figure}
+	\centering
+	\input{Images/DocDevelopment/DocDevelopment.tex}
+	\caption{The flowchart of steps in tech development} \label{fig:techDevFlowchart}
+\end{figure}
+
+
+To see the programming flowchart, see Chapter \ref{chapter:ProgramFlowchart}.
+
+
+\section{structure}
+
+\subsection{Modular Programming}
+
+Modular programming is a software design approach that decomposes a system into independent modules, such as classes or subsystems. Each module encapsulates a specific functionality with its own implementation. While modules may interact by calling each other's functions or methods, the goal is to minimize dependencies between them. This separation enables developers to work on individual modules without requiring in-depth knowledge of the entire system. The approach aims to manage complexity, with the best modules having implementations that can be modified without affecting other modules. This strategy enhances code maintainability and scalability in large software systems \cite{Ousterhout:2018}.
+
+In this project, emphasis has been placed on the application of modular programming concepts, promoting a more robust and flexible software architecture. To see the programming flowchart, see Chapter \ref{chapter:ProgramFlowchart}.
+
+\subsection{Directory Structure for the Python files}
+
+The directory structure itself is a key aspect of modular programming. It organizes related files into logical groups, making it easier to locate and manage different parts of the codebase. It was decided at first that the directory structure for Python files should be as shown below:
+
+\begin{verbatim}
+	|-- data/
+	|-- Doxygen/
+	|-- envRequirements/
+	|-- savedModel/
+	|-- KeywordSpotting.py
+	|-- Modules/
+	|   |-- dataUtils.py
+	|   |-- exportUtils.py
+	|   |-- modelUtils.py
+	|-- Tests/
+	|   |-- testDataUtils.py
+	|   |-- testExportUtils.py
+	|   |-- testModelUtilst.py
+	|-- handleErrors/
+	|   |-- errorHandler.py
+\end{verbatim}
+
+Even though this looks well-organized there are some problems with this approach that are explained in Chapter \ref{chapter:SoftwareTests}. So the final structure of the code was that all python files be in the same level in a directory. Note that the test files should be named with the convention "\texttt{test\_}" at the beginning for automation purposes explained in Chapter \ref{chapter:SoftwareTests}, but due to the agreed convention, the underscore is deleted.
+
+\begin{verbatim}
+	|-- data/
+	|-- Doxygen/
+	|-- envRequirements/
+	|-- savedModel/
+	|-- KeywordSpotting.py
+	|-- dataUtils.py
+	|-- exportUtils.py
+	|-- modelUtils.py
+	|-- testDataUtils.py
+	|-- testExportUtils.py
+	|-- testModelUtils.py
+	|-- errorHandler.py
+\end{verbatim}
+
+\subsubsection{Folders and module files:}
+
+\begin{itemize}
+	\item \texttt{dataUtils.py}: Utility functions for dataset loading and preprocessing.
+	\item \texttt{exportUtils.py}: Utility functions for model exporting and saving.
+	\item \texttt{modelUtils.py}: Utility functions for building and training the model.
+	\item \texttt{testExportUtils.py}: Unit tests for exportUtils module.
+	\item \texttt{testModelUtilst.py}: Unit tests for modelUtils module.
+	\item \texttt{errorHandler.py}: Functions for handling errors across different modules.
+	\item \texttt{data} directory is where the data would be downloaded and saved
+	\item \texttt{Doxygen} directory is where the documentation files are stored.
+	\item \texttt{envRequirements} directory is where the requirement files for creating the required environment are stored. See chapter \ref{chapter:devEnv} to understand how to use these files.
+	\item \texttt{savedModel} directory is where the model and converted model are saved.
+\end{itemize}
+
+\subsection{Main Script}
+
+\texttt{KeywordSpotting.py} serves as the main entry point, coordinating the workflow by leveraging functionalities provided by modularized modules.
+
+\subsection{Testing}
+
+The \texttt{testDataUtils.py}, \texttt{testExportUtils.py}, and \texttt{testModelUtils.py} are dedicated to testing with each test file corresponding to a specific module for targeted and modularized testing. For more information about the testing of these files see Chapter \ref{chapter:SoftwareTests}.
+
+\subsection{Error Handling}
+
+\texttt{errorHandler.py} is a centralized location for error-handling functions, promoting a modular approach to managing unexpected situations. The messages of this module are logged into the \texttt{errorHandler.log} file for message handling purposes.
+
+\subsection{Documented Interface}
+
+Doxygen-style comments in each module provide a clear and documented interface, serving as a guide for users and developers.
+
+\subsection{Separation of Concerns}
+
+Each module is responsible for a specific concern, promoting the separation of concerns principle.
+
+\subsection{Reuse of Components}
+
+The modular structure allows for easy reuse of individual modules in other projects.
+
+\subsection{Ease of Maintenance}
+
+The modular structure facilitates maintenance by localizing changes to specific modules.
+
+\subsection{Testing Independence}
+
+The testing modules are independent of each other, allowing for targeted and isolated testing.
+
+
+\section{Machine Learning Pipeline}
+\label{section:MLPipeline}
+
+\textbf{Note:} A random seed is set for both TensorFlow (\PYTHON{tf.random.set\_seed}) and NumPy (\PYTHON{np.random.seed}). Setting a seed ensures that the random initialization of parameters and any other random processes in the code will be reproducible. This is particularly important when you want to reproduce the same results across different runs of the program.
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={119-121}]{../Code/KeywordSpotting/KeywordSpotting.py}    
+	
+	\caption{Setting the seed for reproducibility}
+	\label{code:seed}
+\end{code}
+
+\subsection{Data Loading}
+
+The pipeline begins by loading the dataset using the \PYTHON{loadDataset} function defined in \texttt{dataUtils.py}. The dataset consists of audio samples categorized into different commands. If the dataset is not present, it is downloaded and extracted from a predefined URL.
+
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={173}]{../Code/KeywordSpotting/KeywordSpotting.py}    
+	
+	\caption{Data loading}
+	\label{code:DataLoading}
+\end{code}
+
+
+\subsubsection{Load Audio Dataset Function}
+
+The \PYTHON{loadDataset} function in Listing \ref{code:loadDataset} is designed to load an audio dataset from a specified path. It follows several key steps:
+
+\begin{enumerate}
+	\item \textbf{Dataset Directory Setup:} The function converts the given \PYTHON{datasetPath} to a \texttt{Path} object using the \PYTHON{pathlib} module: \PYTHON{dataDir = pathlib.Path(datasetPath)}.
+	
+	\item \textbf{Dataset Download:} The function checks if the dataset directory exists. If not, it downloads the dataset from a specified URL using \PYTHON{tf.keras.utils.get\_file}.
+	
+	\item \textbf{List Available Commands (Class Labels):} It lists available commands (class labels) in the dataset by filtering out unwanted files like 'README.md' and '.DS\_Store'.
+	
+	\item \textbf{Load Audio Dataset:} \texttt{tf.keras.utils.audio\_dataset\_from\_directory} is used to load the audio dataset. It automatically splits the dataset into training and validation sets.
+	
+	\item \textbf{Return:} The function returns a tuple containing the training and validation datasets.
+	
+	\item \textbf{Error Handling:} If any exception occurs during the process, it raises an exception using the \PYTHON{errorHandler.errorLoadDataset} function.
+\end{enumerate}
+
+\begin{code}
+	\lstinputlisting[language=Python, numbers=none, linerange={33, 47-78}]{../Code/KeywordSpotting/dataUtils.py}    
+	
+	\caption{The \PYTHON{loadDataset} function.}
+	\label{code:loadDataset}
+\end{code}
+
+
+\subsection{Data Cleaning}
+
+Data cleaning procedures are detailed in Chapter \ref{chapter:DataDescription}, specifically in sections \ref{section:QC} and \ref{section:CaptureLoudest}. This crucial task is performed by the data provider.
+
+\subsection{Data Splitting}
+
+The \PYTHON{audio\_dataset\_from\_directory} function in TensorFlow facilitates the creation of datasets from audio files organized in a directory structure. The splitting of the dataset into training and validation sets is achieved by specifying the \PYTHON{validation\_split} parameter. This parameter designates the fraction of the dataset that will be reserved for validation. Setting \PYTHON{validation\_split=0.2} reserves 20\% of the data for validation, and the remaining 80\% is used for training (See Listings \ref{code:DataLoading} and \ref{code:loadDataset}).
+
+\subsection{Data Preprocessing}
+
+The loaded datasets are further processed using the \PYTHON{preprocessAudioDataset} and \PYTHON{createSpectrogramDataset} functions (See Listings \ref{code:DataPreprocessing} and \ref{code:DataSpectrogram}). The \PYTHON{preprocessAudioDataset} function squeezes the audio data to remove an extra dimension (See Listing \ref{code:DataPreprocessing}), and the \PYTHON{createSpectrogramDataset} function converts the audio waveforms into spectrograms (See Listing \ref{code:createSpectrogramDataset}). 
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={174-178}]{../Code/KeywordSpotting/KeywordSpotting.py}    
+	
+	\caption{Data preprocessing}
+	\label{code:DataPreprocessing}
+\end{code}
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={189, 195}]{../Code/KeywordSpotting/KeywordSpotting.py}    
+	
+	\caption{The \PYTHON{createSpectrogramDataset} function converts the audio waveforms into spectrograms}
+	\label{code:DataSpectrogram}
+\end{code}
+
+\subsubsection{Audio Squeezing}
+
+
+The \PYTHON{preprocessAudioDataset} function is responsible for preprocessing an input audio dataset by squeezing its dimensions. Here are the main steps:
+
+\begin{enumerate}
+	\item \textbf{Inner Squeeze Function:} The function defines an inner \texttt{squeeze} function, which uses \texttt{tf.squeeze} to remove the last dimension of audio data. It returns the squeezed audio and the original labels.
+	
+	\item \textbf{Dataset Mapping:} The \texttt{map} function is applied to the input \texttt{dataset}, using the \texttt{squeeze} function. This is done in parallel using \texttt{tf.data.AUTOTUNE} for optimization.
+	
+	\item \textbf{Return:} The preprocessed audio dataset is then returned.
+	
+	\item \textbf{Error Handling:} If an exception occurs during the squeezing process, the function raises an exception using \texttt{errorHandler.errorProcessAudio}.
+\end{enumerate}
+
+
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={81, 90-98}]{../Code/KeywordSpotting/dataUtils.py}    
+	
+	\caption{The \PYTHON{preprocessAudioDataset} function.}
+	\label{code:preprocessAudioDataset}
+\end{code}
+
+\subsubsection{Create Spectrogram Dataset}
+
+The \texttt{createSpectrogramDataset} function is designed to create a spectrogram dataset from the input audio dataset. The main steps of this function are as follows:
+
+\begin{enumerate}
+	\item \textbf{Inner \texttt{getSpectrogram} Function:} This function is defined to compute the spectrogram of audio waveforms. It utilizes TensorFlow's signal processing functions, specifically \texttt{tf.signal.stft}, to calculate the Short-Time Fourier Transform (STFT) of the audio waveforms. The resulting spectrogram is then processed to obtain the absolute values and expand the last dimension.
+	
+	\item \textbf{Dataset Mapping:} The \texttt{map} function is applied to the input \texttt{dataset}, using the \texttt{getSpectrogram} function. This is done in parallel using \texttt{tf.data.AUTOTUNE} for optimization.
+	
+	\item \textbf{Return:} The function returns the spectrogram dataset.
+	
+	\item \textbf{Error Handling:} If an exception occurs during the spectrogram creation process, the function raises an exception using \texttt{errorHandler.errorSpectrogram}.
+\end{enumerate}
+
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={101, 111-126}]{../Code/KeywordSpotting/dataUtils.py}    
+	
+	\caption{The \PYTHON{createSpectrogramDataset} function.}
+	\label{code:createSpectrogramDataset}
+\end{code}
+
+
+\subsection{Model Building and Training}
+
+The neural network model is constructed using the \PYTHON{buildModel} function shown in Listing \ref{code:neuralNetwork} defined in \texttt{modelUtils.py} in Listing \ref{code:buildModel}. The architecture includes convolutional and fully connected layers, designed to extract hierarchical features from the spectrogram data. Normalization and dropout layers are incorporated to improve generalization and prevent overfitting.
+
+Adam (short for Adaptive Moment Estimation) is an optimization algorithm. Adam is an extension of the stochastic gradient descent (SGD) optimization algorithm. It combines ideas from two other optimization algorithms: RMSprop (Root Mean Square Propagation) and Momentum.
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={231, 243}]{../Code/KeywordSpotting/KeywordSpotting.py}    
+	
+	\caption{The neural network model is constructed using the \PYTHON{buildModel} function}
+	\label{code:neuralNetwork}
+\end{code}
+
+The model layers are:
+
+\begin{itemize}
+	\item \textbf{Input Layer:}
+	\begin{itemize}
+		\item Input layer with the defined input shape (size of the spectrograms).
+	\end{itemize}
+	
+	\item \textbf{Resizing Layer:}
+	\begin{itemize}
+		\item Downsamples the input spectrogram images to a smaller size.
+	\end{itemize}
+	
+	\item \textbf{Normalization Layer:}
+	\begin{itemize}
+		\item Normalizes the spectrogram images using their mean and standard deviation (to be centered around 0 with standard deviation 1).
+	\end{itemize}
+	
+	\item \textbf{Conv2D Layers:}
+	\begin{itemize}
+		\item Apply convolutional operations to capture features.
+	\end{itemize}
+	
+	\item \textbf{MaxPooling2D Layer:}
+	\begin{itemize}
+		\item Reduces spatial dimensions by retaining the maximum values.
+	\end{itemize}
+	
+	\item \textbf{Dropout Layers:}
+	\begin{itemize}
+		\item Introduces regularization by randomly setting a fraction of input units to zero during training.
+	\end{itemize}
+	
+	\item \textbf{Flatten Layer:}
+	\begin{itemize}
+		\item Flattens the 2D output into a 1D array for the fully connected layers.
+	\end{itemize}
+	
+	\item \textbf{Dense Layers:} The output layer
+	\begin{itemize}
+		\item Fully connected layers with specified units and activation functions.
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Build Model Function in \texttt{modelUtils.py}}
+
+The \PYTHON{buildModel} function in \texttt{modelUtils.py} is responsible for constructing and compiling a neural network model. The key steps of this function are as follows:
+
+\begin{enumerate}
+	\item \textbf{Model Architecture:} The function defines a Keras Sequential model comprising various layers, including convolutional, pooling, dropout, flattening, and dense layers. This architecture is suitable for image classification tasks.
+	
+	\item \textbf{Normalization Layer:} The normalization layer (\texttt{normLayer}) is applied to the input data.
+	
+	\item \textbf{Compilation:} The model is compiled using the Adam optimizer, Sparse Categorical Crossentropy loss function, and accuracy as the evaluation metric.
+	
+	\item \textbf{Return:} The compiled Keras Sequential model is returned.
+	
+	\item \textbf{Error Handling:} If an exception occurs during the model construction and compilation, the function raises an exception using \texttt{errorHandler.errorBuildModel}.
+\end{enumerate}
+
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={32, 44-68}]{../Code/KeywordSpotting/modelUtils.py}    
+	
+	\caption{The \PYTHON{buildModel} function.}
+	\label{code:buildModel}
+\end{code}
+
+
+\subsection{Evaluating}
+
+Evaluation is conducted after the model has been trained on the training dataset and validated on a separate validation dataset. The primary goal is to understand how well the model generalizes to new, unseen audio samples.
+
+\subsubsection{Testing and Evaluation Process}
+
+Evaluation is initiated by creating a test dataset (\PYTHON{testDs}) from a shard of the validation dataset. This test dataset is then used to evaluate the model's performance using the \PYTHON{evaluate} method (See Listing \ref{code:evaluate}).
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={274, 280-281}]{../Code/KeywordSpotting/KeywordSpotting.py}    
+	
+	\caption{Testing and evaluation}
+	\label{code:evaluate}
+\end{code}
+
+
+Here, the \texttt{shard} method is employed to create a subset of the validation dataset (\texttt{valSpectrogramDs}). The evaluation is performed on this test dataset, which simulates the model's performance on previously unseen data. The \texttt{evaluate} function returns a dictionary containing metrics such as loss and accuracy.
+
+\subsubsection{Interpretation of Evaluation Metrics}
+
+The evaluation metrics provide valuable insights into how well the model is performing:
+
+\begin{enumerate}
+	\item \textbf{Loss}: The loss indicates how well the model is minimizing the difference between predicted and actual labels. A lower loss value is desirable.
+	\item \textbf{Accuracy}: Accuracy represents the proportion of correctly classified samples. It is calculated as the ratio of correctly predicted samples to the total number of samples. Higher accuracy values indicate better model performance.
+\end{enumerate}
+
+\subsubsection{Early Stopping}
+
+In the training phase, an early stopping callback is employed to monitor the model's validation performance during epochs. If the validation performance does not improve over a predefined number of epochs (\PYTHON{patience}), training is halted early (See Listing \ref{code:epochs}). This prevents overfitting and ensures that the model does not memorize the training data without generalizing well to new samples.
+
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={263- 269}]{../Code/KeywordSpotting/KeywordSpotting.py}    
+	
+	\caption{Early stopping configuration}
+	\label{code:epochs}
+\end{code}
+
+
+\subsection{Saving}
+
+\subsubsection{Exporting the Model}
+
+The trained model is exported using the \PYTHON{ExportModel} class and saved to a specified directory. 
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={287, 292}]{../Code/KeywordSpotting/KeywordSpotting.py}    
+	
+	\caption{}
+	\label{code:ExportingModel}
+\end{code}
+	
+\subsubsection{Model Conversion to TensorFlow Lite}
+
+The saved model is converted to TensorFlow Lite format using the \texttt{convertToTFLite} function. This lightweight model format is suitable for deployment on resource-constrained devices.
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={311, 316-317}]{../Code/KeywordSpotting/KeywordSpotting.py}    
+	
+	\caption{}
+	\label{code:TFLiteConversion}
+\end{code}
+
+
+\subsubsection{Save Model Function in \texttt{exportUtils.py}}
+
+The \texttt{saveModel} function is designed to save a TensorFlow model to a specified path using the SavedModel format. The key aspects of this function are as follows:
+
+\begin{enumerate}
+	\item \textbf{Parameters:} It takes two parameters: the TensorFlow model (\texttt{model}) to be saved and the export path (\texttt{exportPath}) where the model should be stored.
+	
+	\item \textbf{Saving Process:} The function utilizes \texttt{tf.saved\_model.save} to save the model to the specified export path in the SavedModel format. If an error occurs during the saving process, it raises an exception (\texttt{errorHandler.errorSaveModel}).
+	
+\end{enumerate}
+
+\begin{code}[h!]
+	\lstinputlisting[language=Python, numbers=none, linerange={109, 118-121}]{../Code/KeywordSpotting/exportUtils.py}    
+	
+	\caption{The \PYTHON{saveModel} function.}
+	\label{code:saveModel}
+\end{code}
+
+
+\section{Model Deployment}
+
+The command below is a shell command that uses the \texttt{xxd} utility to generate a C header file containing the binary representation of the contents of the \texttt{model.tflite} file.
+
+
+\begin{verbatim}
+	xxd -i model.tflite > tinyConv.cc
+\end{verbatim}
+
+\texttt{xxd} is a command-line tool available on Unix-like systems (including Linux and macOS) that is used for creating a hex dump of a given file or for converting a binary file to a text format that represents the binary data in hexadecimal. To run the command on a Windows operating system, download xxd for windows from this link: \url{https://sourceforge.net/projects/xxd-for-windows/} and then run the command in the \texttt{Command Prompt}.
+
+The binary contents declared as \texttt{alignas(16) const unsigned char g\_model[]} in the \texttt{microFeaturesModel.cpp} file should be updated with the binary contents declared as \texttt{unsigned char model\_tflite[]} in the \texttt{tinyConv.cc} file. Ensure to replace the existing content in \texttt{microFeaturesModel.cpp} with the content of \texttt{model\_tflite[]} from \texttt{tinyConv.cc}. This step is essential for integrating the TensorFlow Lite model into your C or C++ application. For more information see the Chapter \ref{chapter:Deployment}.
+
+
+\section{How to improve}
+
+There are several strategies to enhance the current machine learning pipeline's performance and versatility:
+
+\subsubsection{Data Augmentation}
+
+Implementing data augmentation techniques can artificially increase the size of the training dataset, leading to improved model generalization. Techniques such as random shifts, rotations, and scaling can be applied to the spectrogram data.
+
+\subsubsection{Hyperparameter Tuning}
+
+Fine-tuning hyperparameters, including learning rates, batch sizes, and the number of layers or units in the neural network, can significantly impact model performance. Employ techniques like grid search or Bayesian optimization to find optimal hyperparameter values.
+
+\subsubsection{Transfer Learning}
+
+Consider leveraging pre-trained models or transfer learning techniques. Pre-trained models on large audio datasets can capture generic audio features, and fine-tuning on the specific task can expedite convergence and enhance performance.
+
+\subsubsection{Ensemble Learning}
+
+Combine predictions from multiple models using ensemble learning methods. This approach often leads to improved performance by leveraging the diversity of different models.
+
+\subsubsection{Regularization Techniques}
+
+Explore regularization techniques such as dropout or L2 regularization to prevent overfitting and improve the model's ability to generalize to unseen data.
+
+\subsubsection{Model Architecture Exploration}
+
+Experiment with different neural network architectures, including variations in the number and type of layers. Techniques like neural architecture search can automate the exploration process.
+
+
+\subsubsection{Quantization and Pruning}
+
+Optimize the model for deployment on resource-constrained devices by applying quantization and pruning techniques. These methods reduce model size and inference time while maintaining acceptable performance.
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{Abbas:2023}
+Nurul~Atikah Abbas and Mohd~Ridzuan Ahmad.
+\newblock Keyword spotting system with nano 33 ble sense using embedded machine
+  learning approach.
+\newblock {\em Jurnal Teknologi}, 85(3):175–182.
+
+\bibitem{Nabaz:2023}
+Danyar Nabaz, Noraimi Shafie, and Azizul Azizan.
+\newblock Design of emergency keyword recognition using arduino nano ble sense
+  33 and edge impulse.
+\newblock {\em Open International Journal of Informatics}, 11(2):46--57, 2023.
+
+\bibitem{Ray:2022}
+Partha~Pratim Ray.
+\newblock A review on tinyml: State-of-the-art and prospects.
+\newblock {\em Journal of King Saud University-Computer and Information
+  Sciences}, 34(4):1595--1623, 2022.
+
+\bibitem{Warden:2018}
+Pete Warden.
+\newblock Speech commands: A dataset for limited-vocabulary speech recognition.
+\newblock {\em arXiv preprint arXiv:1804.03209}, 2018.
+
+\end{thebibliography}

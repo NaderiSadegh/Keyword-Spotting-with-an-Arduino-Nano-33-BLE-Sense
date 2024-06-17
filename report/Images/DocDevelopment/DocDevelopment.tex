@@ -1,0 +1,51 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% $Author: Sadegh Naderi $
+% $Datum: 11.02.2024  $
+% $Pfad: ML23-01-Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense\report\Images\DocDevelopment\DocDevelopment.tex $
+% $Version: 1.0 $
+% $Reviewed by: Sadegh Naderi $
+% $Review Date: 11.02.2024 $
+%
+% !TeX encoding = utf8
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{tikzpicture}[>=stealth, node distance=1cm, every node/.style={rectangle, draw, align=center, font=\footnotesize}]
+	
+	% Nodes
+	\node (start) [ellipse, fill=orange!30] {Start};
+	\node (installPython) [below=of start, yshift=-0.25cm, fill=blue!30] {Install Python};
+	\node (installPyCharm) [below=of installPython, fill=blue!30] {Install PyCharm};
+	\node (setUpEnv) [below=of installPyCharm, diamond, fill=green!30] {Set Up \\ Environment};
+	\node (requirements) [left=of setUpEnv, xshift=-1.5cm, fill=blue!30] {requirements.txt};
+	\node (environmentYML) [right=of setUpEnv, xshift=1.5cm, fill=blue!30] {environment.yml};
+	\node (installArduino) [below=of setUpEnv, fill=blue!30] {Install Arduino IDE};
+	\node (installTensorFlow) [below=of installArduino, fill=blue!30] {Install TensorFlow Library \\ for Arduino IDE};
+	\node (setEnvVariables) [below=of installTensorFlow, fill=blue!30] {Set Environment Variables \\ (Windows)};
+	\node (runTests) [below=of setEnvVariables, fill=blue!30] {Run Tests};
+	\node (executeMLPipeline) [below=of runTests, fill=blue!30] {Execute the ML Pipeline};
+	\node (convertModel) [below=of executeMLPipeline, fill=blue!30] {Convert model.tflite \\ to a C Header File};
+	\node (integrateHeader) [below=of convertModel, fill=blue!30] {Integrate C Header \\ in TensorFlow Library};
+	\node (uploadSketch) [below=of integrateHeader, fill=blue!30] {Upload Sketch to Arduino Board};
+	\node (end) [ellipse, below=of uploadSketch, fill=orange!20] {End};
+	
+	% Arrows
+	\draw[->] (start) -- (installPython);
+	\draw[->] (installPython) -- (installPyCharm);
+	\draw[->] (installPyCharm) -- (setUpEnv);
+	\draw[->] (setUpEnv) -- (requirements);
+	\draw[->] (setUpEnv) -- (environmentYML);
+	\draw[->] (requirements) -- (installArduino);
+	\draw[->] (environmentYML) -- (installArduino);
+	\draw[->] (installArduino) -- (installTensorFlow);
+	\draw[->] (installTensorFlow) -- (setEnvVariables);
+	\draw[->] (setEnvVariables) -- (runTests);
+	\draw[->] (runTests) -- (executeMLPipeline);
+	\draw[->] (executeMLPipeline) -- (convertModel);
+	\draw[->] (convertModel) -- (integrateHeader);
+	\draw[->] (integrateHeader) -- (uploadSketch);
+	\draw[->] (uploadSketch) -- (end);
+	
+\end{tikzpicture}

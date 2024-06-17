@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% $Autor: Malik Al Ashter Ghansletwala $
+% $Datum: 2023-10-12 09:05:07Z $
+% $Directory: ML23-01-Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense\report\Contents\en\Introduction.tex $
+% $Version: 2 $
+% $Review by: Sadegh Naderi $
+% $Review date: 11.02.2024 $
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Introduction}
+
+Voice recognition has become a ubiquitous feature in our modern lives, powering everything from virtual assistants to smart home devices \cite{Waqar:2021}. However, most voice recognition systems rely on cloud-based processing, which raises concerns about data privacy, security, and the need for a consistent internet connection \cite{Dutta:2021, Gimenez:2022b}. The "Keyword Spotting with Arduino Nano 33 BLE Sense" project sets out to address these challenges by bringing voice recognition to the edge. The TinyML paradigm in embedded machine learning seeks to transfer the abundance of processing tasks from conventional high-end systems to lower-end client devices \cite{Ray:2022}. This project embodies the fusion of machine learning and embedded systems, showcasing the potential for keyword spotting on a compact, low-power, and feature-rich device. 
+
+The primary objective of this project is to enable the Arduino Nano 33 BLE Sense to recognize specific keywords or phrases directly on the device. By doing so, we demonstrate the feasibility of edge-based voice recognition, reducing the need for cloud connectivity and enhancing user privacy. This journey encompasses data collection, audio preprocessing, machine learning model training, and the deployment of a compact and energy-efficient model capable of detecting predefined keywords from real-time audio input. The Arduino Nano 33 BLE Sense, known for its compact form factor and resource efficiency, serves as a compelling platform to illustrate the potential of machine learning at the edge.
+
+This project represents a tangible step towards creating intelligent, privacy-conscious, and offline-capable voice-activated solutions that can be applied across various domains, from home automation to assistive technologies. Join us as we embark on an exciting exploration at the cutting edge of technology, delving into the world of Keyword Spotting with the Arduino Nano 33 BLE Sense, and paving the way for more versatile, privacy-aware interactions with voice-activated technology
+
+
+\section{Challenges}
+
+\begin{itemize}
+	\item\textbf{Limited computational resources and memory:} Adapting machine learning models to run efficiently on the Arduino Nano 33 BLE Sense's constrained computational resources is a central challenge. You'll need to optimize and quantize your model to ensure it works well within the device's limitations, striking a balance between model complexity and accuracy. The small size of SRAM and flash memory in edge devices, often less than 1 MB, poses a challenge for deploying machine learning tasks at the edge \cite{Ray:2022}.
+	\item\textbf{Noise and variability handling:} Designing a robust keyword spotting system that can handle variations in speech, accents, and environmental noise is essential. Building a model that is resilient to different conditions and speaking styles can be challenging, and it's crucial for practical applications.
+	\item \textbf{Hardware and software heterogeneity:} Variability in hardware and software infrastructure complicates the adoption of consistent learning and deployment strategies for TinyML systems \cite{Ray:2022}.
+ 	\item\textbf{Lack of suitable datasets:} Existing datasets may not align with TinyML architecture requirements, emphasizing the need for standardized datasets tailored for low-power edge devices \cite{Ray:2022}.
+\end{itemize}
+
+\section{Proposed Solution}
+
+To tackle limited computational resources, optimize the machine learning model, use lightweight architectures, and explore hardware acceleration options. Achieving real-time processing involves streamlining code, leveraging multithreading, and potentially reducing the audio sampling rate. To address noise and variability, augment the training data, implement noise reduction techniques, and consider adaptive models for improved robustness to real-world audio variations.
+
+\section{Structure}
+
+The report begins with an introduction that outlines the challenges, proposed solution, and report structure. In the next chapter, the focus shifts to Domain Knowledge, covering machine learning deployment for embedded systems, including topics like TinyML, data collection, preprocessing, model training, deployment, and various hardware components and tests. The following chapter provides a detailed Hardware Description, focusing on the Arduino Nano 33 BLE Sense and its sensors. The subsequent chapter explores Software Description, encompassing tools like Arduino IDE, TinyML model development, audio processing libraries, and machine learning frameworks. The report then delves into Data Mining, specifically Convolutional Neural Network (CNN) concepts and applications. Important Python packages, including TensorFlow and NumPy, are discussed in the subsequent chapter. 
+
+The Knowledge Discovery in Databases (KDD) Process is introduced and detailed in the next chapter, followed by a chapter on Data Transformation and Data Mining in KDD. The deployment methods, including manual deployment and TensorFlow Lite, are covered in the next chapter. The Requirements, including a Bill of Materials and Development Environment details, are discussed in the subsequent chapter. The Program Flowchart is presented, followed by a chapter on Documentation Development. Software Tests are detailed, emphasizing automation with pytest. Results are discussed, covering data transformation, model export, training, and Arduino Nano 33 BLE Sense results. Finally, the report concludes with a summary, outlining future work and tasks to be addressed.
+
+\subsection{What it is used for}
+
+The board is programmed to recognize keywords "yes" and "no," showing green and red LED light colors in response. As the majority of the spoken input is not relevant to the voice interface \cite{Warden:2018}, a blue LED light is assigned for unknown keyword. The device can become portable by using a powerbank. Nevertheless, it is important to highlight that the primary purpose of this project is for educational use.
+
+It is worthwhile to mention that the task of keyword spotting is distinct from the type of speech recognition performed on a server once an interaction has been identified \cite{Warden:2018}:
+
+\begin{itemize}
+	\item The majority of their input comprises silence or background noise rather than speech.
+	\item As was mentioned, most of the speech input is unrelated to the voice interface, necessitating models that are unlikely to trigger on arbitrary speech.
+	\item Recognition in keyword spotting focuses on individual words or short phrases, not entire sentences.
+\end{itemize}
+
+
+\subsection{First Steps: Requirements and Installation}
+
+\subsubsection{The project}
+
+The first crucial steps involve installing the necessary software components. Begin by installing Python on your system, and you can obtain the latest version from the official Python website. If you're using Linux, the installation process can be initiated with commands like \texttt{sudo apt-get update} and \texttt{sudo apt-get install python3}.
+
+Following this, proceed to download and install PyCharm, a widely used Python IDE, from the JetBrains website. Once both Python and PyCharm are in place, the next step is to create and set up a virtual environment for your project. Execute commands such as \texttt{python -m venv venv} to create the virtual environment and \texttt{venv\textbackslash Scripts\textbackslash activate} to activate it. Subsequently, install dependencies listed in the \texttt{requirements.txt} file, including any specific developer packages required for your project. See sections \ref{section:requirementsFile} and \ref{section:techDevSteps} and Chapter \ref{chapter:devEnv} for more details.
+
+In addition, download and install the Arduino IDE from the official Arduino website. This is a fundamental platform for Arduino development and serves as the environment for coding, compiling, and uploading code to Arduino boards. Secondly, install the TensorFlow Library for Arduino IDE by referring to the instructions outlined in the TensorFlow Lite for Microcontrollers documentation, accessible at the provided link: \href{https://github.com/tensorflow/tflite-micro-arduino-examples}{TensorFlow Lite Micro}.
+
+Additionally, for Windows users, it is essential to set up environment variables to work seamlessly with TensorFlow and Arduino in the Command Prompt.
+
+To start with the code, visit the directory \texttt{Code/KeywordSpotting}.
+
+See Section \ref{section:techDevSteps} for more information about the setup steps.
+
+
+\subsubsection{The device}
+
+Start by connecting the device to your computer using a USB cable. Ensure that the Arduino Nano 33 BLE Sense is recognized by your computer, and, if necessary, upload your desired code using the Arduino IDE or another development environment. 
+
+You can proceed to power on the Arduino Nano 33 BLE Sense independently using a power bank. Connect the power bank to the Arduino Nano 33 BLE Sense using a USB cable, turn on the power bank, and verify that the board is operating as expected.
+
+See chapter \ref{chapter:Deployment} for more information.
+
+\subsection{Working with Examples}
+
+To work with the TensorFlow Lite Micro library for Arduino, follow these steps for installation and usage:
+
+\subsubsection{Installation}
+
+Clone the tflite-micro-arduino-examples GitHub repository into the libraries folder of the Arduino IDE. The installation location varies by operating system but is typically in \texttt{\textasciitilde/Arduino/libraries} on Linux, \texttt{\textasciitilde/Documents/Arduino/libraries/} on MacOS, and \texttt{My Documents\textbackslash Arduino\textbackslash Libraries} on Windows.
+
+Use the following commands in the terminal:
+
+\begin{verbatim}
+	git clone https://github.com/tensorflow/tflite-micro-arduino-examples Arduino_TensorFlowLite
+	cd Arduino_TensorFlowLite
+\end{verbatim}
+	
+To update the repository, use:
+	
+\begin{verbatim}
+	cd Arduino_TensorFlowLite
+	git pull
+\end{verbatim}
+
+
+\subsubsection{Usage}
+
+After installation, launch the Arduino IDE, and you'll find an \texttt{Arduino\_TensorFlowLite} entry in the \texttt{File -> Examples} menu. This submenu provides sample projects for experimentation, such as the "Hello World" example.
+
+The library is designed for the Arduino Nano 33 BLE Sense board, but the framework code for running machine learning models is compatible with most Arm Cortex M-based boards. Note that specific code for accessing peripherals like microphones, cameras, and accelerometers is tailored to the Nano 33 BLE Sense.
+

@@ -1,0 +1,59 @@
+%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% $Author: Sadegh Naderi $
+% $Datum: 2024-01-16  $
+% $Shodrt Description: A flowchart of the program is provided and explained $
+%$Pfad: ML23-01-Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense\report\Contents\en\ProgramFlowchart.tex $
+% $Version: 2.0 $
+% $Review by: Sadegh Naderi $
+% $Review date: 2024-02-12 $
+%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Program Flowchart}
+\label{chapter:ProgramFlowchart}
+
+In this Chapter, a breakdown of each step involved in the keyword spotting program is provided. The program flowchart is shown in Figure \ref{fig:progFlowchart}. For a more detailed explanation of the program see Section \ref{section:MLPipeline} and for understanding the program tests visit chapter \ref{chapter:SoftwareTests}.
+
+\begin{itemize}
+	\item \textbf{Start:} The program initiates the keyword spotting process.
+	
+	\item \textbf{Dataset Existence Check:} The program checks if the dataset is already available. If present, it proceeds to the "Load Dataset" step; otherwise, it initiates the process of downloading and extracting the dataset.
+	
+	\item \textbf{Load Dataset:} The dataset is loaded from the specified path. A test is conducted to verify the successful loading of the dataset without errors.
+	
+	\item \textbf{Audio Preprocessing:} The loaded audio dataset undergoes preprocessing, specifically squeezing the audio to remove unnecessary dimensions. A test validates the correct execution of audio preprocessing steps.
+	
+	\item \textbf{Create Spectrogram Dataset:} Spectrograms are generated from the preprocessed audio data, transforming audio signals into frequency representations. The process is tested to confirm spectrogram creation.
+	
+	\item \textbf{Build Model:} The neural network model is constructed with specific layers, configurations, and input shapes. A test ensures that the model is built correctly and ready for compilation.
+	
+	\item \textbf{Compile Model:} The model is compiled by specifying the optimizer, loss function, and evaluation metrics, preparing it for training.
+	
+	\item \textbf{Train Model:} The model is trained on the training dataset, involving shuffling, caching, and prefetching for efficiency. The training process is monitored, and the model's performance is evaluated on the validation dataset.
+	
+	\item \textbf{Create Test Dataset:} A separate dataset is created for testing the model's predictions, simulating real-world scenarios.
+	
+	\item \textbf{Evaluate Test Predictions:} The model is evaluated on the test dataset to assess its predictive accuracy and generalization to new, unseen data.
+	
+	\item \textbf{Save Model:} The trained model is saved to disk for future use or deployment, preserving its architecture and learned parameters.
+	
+	\item \textbf{Convert to TFLite and Save:} The saved model is converted into TensorFlow Lite format, a lightweight format suitable for deployment on resource-constrained devices. The converted model is then saved.
+	
+	\item \textbf{Test Model Export:} The exporting functions are tested to ensure that the program is capable of exporting the model.
+	
+	\item \textbf{Catch and Handle Errors:} The program includes an error-handling mechanism to capture and handle any unexpected errors during the entire process, enhancing resilience to potential issues.
+	
+	\item \textbf{Log the Errors:} In case of an error, information about the error is logged. This step aids in debugging and improving the program by providing insights into the nature of encountered issues.
+	
+	\item \textbf{End:} The program concludes, marking the successful completion of the keyword spotting pipeline.
+\end{itemize}
+
+
+\begin{figure}[h!]
+	\centering
+	\input{Images/Flowchart/programmingFlowchart.tex}
+	\caption{The program flowchart} \label{fig:progFlowchart}
+\end{figure}
+
