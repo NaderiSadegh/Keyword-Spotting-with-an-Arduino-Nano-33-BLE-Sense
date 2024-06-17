@@ -56,25 +56,24 @@ The project repository is organized as follows:
   * [KeywordSpotting.tex](./report/KeywordSpotting.tex) 
 
   * [Contents](./report/Contents): tex files for contents of each chapter
-    * [en](./reports/Contents/en)
-      * [BillofMaterials.tex](./report/Contents/en/BillofMaterials.tex): Hardware and Sofware BoM, requirements
-      * [Conclusion.tex](./report/Contents/en/Conclusion.tex)
-      * [DataDescription.tex](./report/Contents/en/DataDescription.tex): Description of the dataset
-      * [DataMining.tex](./report/Contents/en/DataMining.tex): Machine Learning Algorithm (CNN)
-      * [DataTransformandMining.tex](./report/Contents/en/DataTransformandMining.tex): Data transformation and Data Mining in KDD
-      * [Deployment.tex](./report/Contents/en/Deployment.tex): Deployment in KDD
-      * [DevelopmentEnvironment.tex](./report/Contents/en/DevelopmentEnvironment.tex): Development environment, how to create manual
-      * [DocumentationDevelopment.tex](./report/Contents/en/DocumentationDevelopment.tex), Documentation developer for tech development
-      * [Domain.tex](./report/Contents/en/Domain.tex): Domain knowledge for data and problem
-      * [HardwareDescription.tex](./report/Contents/en/HardwareDescription.tex): Description of the board Arduino Nano 33 BLE Sense
-      * [Introduction.tex](./report/Contents/en/Introduction.tex)
-      * [KDDIntroduction.tex](./report/Contents/en/KDDIntroduction.tex) Introduction of the KDD process
-      * [Numpy.tex](./report/Contents/en/Numpy.tex) Numpy package explanation
-      * [ProgramFlowchart.tex](./report/Contents/en/ProgramFlowchart.tex): Program flowchart and explanation
-      * [Results.tex](./report/Contents/en/Results.tex): The achieved results and analysis
-      * [SoftwareDescription.tex](./report/Contents/en/SoftwareDescription.tex): Description of the software
-      * [TensorFlow.tex](./report/Contents/en/TensorFlow.tex): TensorFlow package explanation
-      * [testSoftware.tex](./report/Contents/en/testSoftware.tex): Explanation of the test modules for software, simple manual for testing and automation of the testing process
+    * [BillofMaterials.tex](./report/Contents/en/BillofMaterials.tex): Hardware and Sofware BoM, requirements
+    * [Conclusion.tex](./report/Contents/en/Conclusion.tex)
+    * [DataDescription.tex](./report/Contents/en/DataDescription.tex): Description of the dataset
+    * [DataMining.tex](./report/Contents/en/DataMining.tex): Machine Learning Algorithm (CNN)
+    * [DataTransformandMining.tex](./report/Contents/en/DataTransformandMining.tex): Data transformation and Data Mining in KDD
+    * [Deployment.tex](./report/Contents/en/Deployment.tex): Deployment in KDD
+    * [DevelopmentEnvironment.tex](./report/Contents/en/DevelopmentEnvironment.tex): Development environment, how to create manual
+    * [DocumentationDevelopment.tex](./report/Contents/en/DocumentationDevelopment.tex), Documentation developer for tech development
+    * [Domain.tex](./report/Contents/en/Domain.tex): Domain knowledge for data and problem
+    * [HardwareDescription.tex](./report/Contents/en/HardwareDescription.tex): Description of the board Arduino Nano 33 BLE Sense
+    * [Introduction.tex](./report/Contents/en/Introduction.tex)
+    * [KDDIntroduction.tex](./report/Contents/en/KDDIntroduction.tex) Introduction of the KDD process
+    * [Numpy.tex](./report/Contents/en/Numpy.tex) Numpy package explanation
+    * [ProgramFlowchart.tex](./report/Contents/en/ProgramFlowchart.tex): Program flowchart and explanation
+    * [Results.tex](./report/Contents/en/Results.tex): The achieved results and analysis
+    * [SoftwareDescription.tex](./report/Contents/en/SoftwareDescription.tex): Description of the software
+    * [TensorFlow.tex](./report/Contents/en/TensorFlow.tex): TensorFlow package explanation
+    * [testSoftware.tex](./report/Contents/en/testSoftware.tex): Explanation of the test modules for software, simple manual for testing and automation of the testing process
 
   * [Code](./report/Code/): Directory for example code files used in the report
 
