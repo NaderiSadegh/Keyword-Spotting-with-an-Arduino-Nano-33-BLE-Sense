@@ -107,22 +107,9 @@ The project repository is organized as follows:
 
   * [images](./report/Images/): Directory for images used in the report
 
-* [Presentations](./Presentations)
-  * [LiteratureReview](./Presentations/SadeghNaderi/LiteratureReview/): Review of the literature used in the report
-    * [LiteratureReview.pdf](./Presentations/SadeghNaderi/LiteratureReview/LiteratureReview.pdf)
-      * [ContentLiteratureReview.tex](./Presentations/SadeghNaderi/LiteratureReview/slides/ContentLiteratureReview.tex)
-  * [KyewordSpotting](./Presentations/KyewordSpotting/): Project presentation
-    * [KyewordSpotting.pdf](./Presentations/KyewordSpotting/KyewordSpotting.pdf)
-      * [Introduction.tex](./Presentations/KyewordSpotting/slides/Introduction.tex)
-      * [Challenges.tex](./Presentations/KyewordSpotting/slides/Challenges.tex)
-      * [Solution.tex](./Presentations/KyewordSpotting/slides/Solution.tex)
-      * [Conclusion.tex](./Presentations/KyewordSpotting/slides/Conclusion.tex)
-
  * Documents
 
-   * [Literature](./Documents/Literature): Downloaded PDF files for literature
    * [MyLiterarture.bib](./Documents/MyLiterature.bib): The .bib file used both for report and literature review
-   * [DocumentationEnchancementsAndReview.txt](./Documents/DocumentManagement/DocumentationEnchancementsAndReview.txt)
 
   * Code (the code used for the project)
     * [KeywordSpotting](./Code/KeywordSpotting): Python code for the project directory
@@ -141,33 +128,13 @@ The project repository is organized as follows:
       * [envRequirements](./Code/KeywordSpotting/envRequirements): Environment requirements
         * [environment.yml](./Code/KeywordSpotting/envRequirements/environment.yml): Automating the environment creation process with yml file
         * [requirements.txt](./Code/KeywordSpotting/envRequirements/requirements.txt): Automating the environment creation process with txt file
-  * [microSpeech](./Code/microSpeech/): The code used in the TensorFlow Library for Arduino. Note that this codebase is only intended for documentation purposes, not for implementation. Implementation is explainedin the report.
-    * [Doxygen](./Code/microSpeech/Doxygen/): Doxygen documentation
-      * [index.html](./Code/microSpeech/Doxygen/html/index.html)
-
-* [manual](./manual): The manual for the keyword spotting device
-  * [KeywordSpottingManual.pdf](./manual/KeywordSpottingManual.pdf)
-  * [KeywordSpottingManual.tex](./manual/KeywordSpottingManual.tex)
-
+  
 * [Poster](./Poster): The project poster
   * [KeywordSpottingPoster.pdf](./Poster/KeywordSpottingPoster.pdf)
   * [KeywordSpottingPoster.tex](./Poster/KeywordSpottingPoster.tex)
 
 
-* ML23-Algorithms: Presentations of algorithms
 
-   * [25NaiveBayesWithPython](./ML23-Algorithms/25NaiveBayesWithPython/)  
-     * [NaiveBayesWithPython.pdf](./ML23-Algorithms/25NaiveBayesWithPython/NaiveBayesWithPython.pdf)
-
-   * [26LogisticRegressionWithPython](./ML23-Algorithms/26LogisticRegressionWithPython/)
-     * [26LogisticRegressionWithPython.pdf](./ML23-Algorithms/26LogisticRegressionWithPython/LogisticRegression.pdf) 
-
-   * [27DecisionTreesWithPython](./ML23-Algorithms/27DecisionTreesWithPython/)
-     * [27DecisionTreesWithPython.pdf](./ML23-Algorithms/27DecisionTreesWithPython/DecisionTreesWithPython.pdf)
-
-* [ProjectManagement](./ProjectManagement)
-  * [Checklist.xlsx](./ProjectManagement/Checklist.xlsx)
-  * [EvaluationHW.xlsx](./ProjectManagement/EvaluationHW.xlsx)
 
 ## Data transformation
 
