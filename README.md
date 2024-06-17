@@ -154,7 +154,7 @@ The training process involves collecting a dataset of audio samples containing t
 Once the model is trained, it is important to analyze its performance and visualize the training and validation results.
 
 <div class="image">
-  <img class=center src="https://github.com/Wings-hub/ML23-01-Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense/blob/main/report/Images/Results/trainingProgress.png" alt="" width="500px">
+  <img class=center src="https://github.com/NaderiSadegh/Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense/blob/main/report/Images/Results/trainingProgress.png" alt="" width="500px">
   <div class="caption">Figure 2: Accuracy and loss trends over epochs</div>
 </div>
 
@@ -175,7 +175,7 @@ The deployment process includes loading the trained model onto the Arduino Nano 
 The CNN model achieved a training accuracy of 89.39% with a loss of 0.32. Validation accuracy is 86% with a loss of 0.42. Test data accuracy is 85%. To improve generalization, consider tuning, regularization, or adjusting the model architecture for better performance on unseen data.
 
 <div class="image">
-  <img class=center src="https://github.com/Wings-hub/ML23-01-Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense/blob/main/report/Images/Results/ArduinoGreen.jpg" alt="" width="500px">
+  <img class=center src="https://github.com/NaderiSadegh/Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense/blob/main/report/Images/Results/ArduinoGreen.jpg" alt="" width="500px">
   <div class="caption">Figure 3: The board's LED response to the keyword "yes"</div>
 </div>
 
