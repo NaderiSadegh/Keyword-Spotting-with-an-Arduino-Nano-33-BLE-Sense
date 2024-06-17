@@ -139,7 +139,7 @@ The project repository is organized as follows:
 ## Data transformation
 
 <div class="image">
-  <img class=center src="https://github.com/Wings-hub/ML23-01-Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense/blob/main/report/Images/Results/audioWaveSpectrogramYes.png" alt="" width="500px">
+  <img class=center src="https://github.com/NaderiSadegh/Keyword-Spotting-with-an-Arduino-Nano-33-BLE-Sense/blob/main/report/Images/Results/audioWaveSpectrogramYes.png" alt="" width="500px">
   <div class="caption">Figure 1: Audio waveform of the keyword "yes" is transformed to a spectrogram</div>
 </div>
 
