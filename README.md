@@ -4,14 +4,6 @@ Name of the project
 
 - Keyword Spotting with an Arduino Nano 33 BLE Sense
 
-  Supervisor: Prof. Dr. Elmar Wings
-
-Contributors:
-
-- Shakywar, Achal, 7025278
-- Naderi, Sadegh, 7024414
-- Ghansletwala, Malik Al Ashter, 7025306
-
 # Short Description of the Project
 
 This project explores the application of Tiny Machine Learning (TinyML) to create a keyword spotting system using an Arduino Nano 33 BLE Sense. The goal of this project is to train the Arduino Nano 33 BLE Sense to recognize specific keywords from a dataset and trigger an RGB LED to blink whenever it senses one of the trained keywords from a sample of the trained data.
