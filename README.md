@@ -1,8 +1,5 @@
-# GitHubTemplate
 
-Name of the project
-
-- Keyword Spotting with an Arduino Nano 33 BLE Sense
+# Keyword Spotting with an Arduino Nano 33 BLE Sense
 
 # Short Description of the Project
 
